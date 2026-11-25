@@ -10,17 +10,32 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header class="navbar">
+<header class="navbar">
     <div class="container nav-content">
       <a href="index.html" class="brand">
         <img src="images/logo.png" alt="Isotipo F.O.G." class="brand-logo" />
         <span>FACTS ON GAMERS</span>
       </a>
-      <nav class="nav-links" aria-label="Navegación principal">
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+        aria-controls="navDrawer"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav-links" id="navDrawer" aria-label="Navegación principal">
         <a href="index.html">Inicio</a>
         <a href="historia.html">Historia y Filosofía</a>
         <a href="operacion.html">Cómo Funciona</a>
         <a href="oferta.html">Qué Ofrece</a>
+        <a href="buyer-persona.html">Buyer Persona</a>
         <a href="futuro.html">Planes a Futuro</a>
       </nav>
     </div>

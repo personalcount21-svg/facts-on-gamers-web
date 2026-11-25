@@ -16,11 +16,26 @@
         <img src="images/logo.png" alt="Isotipo F.O.G." class="brand-logo" />
         <span>FACTS ON GAMERS</span>
       </a>
-      <nav class="nav-links" aria-label="Navegación principal">
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+        aria-controls="navDrawer"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav-links" id="navDrawer" aria-label="Navegación principal">
         <a href="index.html">Inicio</a>
         <a href="historia.html">Historia y Filosofía</a>
         <a href="operacion.html">Cómo Funciona</a>
         <a href="oferta.html">Qué Ofrece</a>
+        <a href="buyer-persona.html">Buyer Persona</a>
         <a href="futuro.html">Planes a Futuro</a>
       </nav>
     </div>
@@ -57,46 +72,83 @@
         <div class="section-intro">
           <span class="eyebrow">Identidad Corporativa</span>
           <h2>Desglose de Marca, Colores y Tipografía</h2>
-          <p class="lead">Construcción visual basada en geometría isométrica, contrastes cromáticos y tipografía <strong>Montserrat Black</strong>.</p>
+          <p class="lead">Cada elemento por separado con su breve descripción. Haz clic en cualquier imagen para verla ampliada.</p>
         </div>
 
-        <div class="brand-breakdown-grid">
-          <article class="rgb-card brand-spec-card">
-            <h3>Construcción del Logotipo y Descriptor</h3>
-            <p>Combinación de isotipo geométrico, logotipo en <strong>Montserrat Black</strong> y subtítulo descriptivo para aplicaciones principales y horizontales.</p>
-            <div class="brand-lockup-pair">
-              <figure class="brand-asset-box">
-                <img src="images/marca (3).png" alt="Logotipo FACTS ON GAMERS en Montserrat Black" />
-                <figcaption>Logotipo (Montserrat Black)</figcaption>
-              </figure>
-              <figure class="brand-asset-box">
-                <img src="images/marca (4).png" alt="Logotipo y descriptor FACTS ON GAMERS" />
-                <figcaption>Con Descriptor Corporativo</figcaption>
-              </figure>
-            </div>
-            <figure class="brand-asset-box brand-asset-wide">
-              <img src="images/marca (5).png" alt="Aplicación horizontal completa de la marca Facts On Gamers" />
-              <figcaption>Versión Horizontal Completa</figcaption>
-            </figure>
+        <div class="brand-cards-grid">
+          <article class="rgb-card brand-detail-card">
+            <button
+              type="button"
+              class="brand-zoom-trigger"
+              data-title="Isotipo Isométrico F.O.G."
+              data-desc="Símbolo geométrico tridimensional con las iniciales F y G en degradado cian, magenta y violeta sobre fondo oscuro."
+            >
+              <img src="images/marca (2).png" alt="Isotipo isométrico Facts On Gamers" />
+            </button>
+            <h3>Isotipo Isométrico F.O.G.</h3>
+            <p>Símbolo geométrico con las letras F y G y degradado gaming; funciona como ícono de marca, sello y aplicación visual.</p>
           </article>
 
-          <article class="rgb-card brand-spec-card">
-            <h3>Paleta Cromática e Isotipo</h3>
-            <p>Degradados de alto impacto inspirados en iluminación gaming y estética de consola, equilibrados con el tono neutro <code>#2c323b</code>.</p>
-            <div class="brand-palette-pair">
-              <figure class="brand-asset-box">
-                <img src="images/marca (2).png" alt="Isotipo isométrico Facts On Gamers" />
-                <figcaption>Isotipo F.O.G.</figcaption>
-              </figure>
-              <figure class="brand-asset-box">
-                <img src="images/marca (1).png" alt="Paleta de colores y degradados de Facts On Gamers" />
-                <figcaption>Códigos y Degradados</figcaption>
-              </figure>
+          <article class="rgb-card brand-detail-card">
+            <button
+              type="button"
+              class="brand-zoom-trigger"
+              data-title="Logotipo · Montserrat Black"
+              data-desc="Nombre comercial FACTS ON GAMERS compuesto en tipografía Montserrat Black (peso 900) para máxima firmeza y legibilidad."
+            >
+              <img src="images/marca (3).png" alt="Logotipo FACTS ON GAMERS en Montserrat Black" />
+            </button>
+            <h3>Logotipo · Montserrat Black</h3>
+            <p>Nombre principal en <strong>Montserrat Black</strong> (peso 900) con trazo sólido y limpio para encabezados y presencia de marca.</p>
+          </article>
+
+          <article class="rgb-card brand-detail-card">
+            <button
+              type="button"
+              class="brand-zoom-trigger"
+              data-title="Logotipo con Descriptor"
+              data-desc="Combinación del logotipo principal con el subtítulo descriptivo de dispositivos tecnológicos dedicados al gaming."
+            >
+              <img src="images/marca (4).png" alt="Logotipo y descriptor FACTS ON GAMERS" />
+            </button>
+            <h3>Logotipo con Descriptor</h3>
+            <p>Suma el subtítulo descriptivo al nombre de la marca para aclarar su rubro de dispositivos tecnológicos gaming.</p>
+          </article>
+
+          <article class="rgb-card brand-detail-card">
+            <button
+              type="button"
+              class="brand-zoom-trigger"
+              data-title="Versión Horizontal Completa"
+              data-desc="Composición horizontal que reúne el isotipo, el logotipo en Montserrat Black y el descriptor sobre fondo oscuro."
+            >
+              <img src="images/marca (5).png" alt="Aplicación horizontal completa de la marca Facts On Gamers" />
+            </button>
+            <h3>Versión Horizontal Completa</h3>
+            <p>Formato apaisado que integra isotipo, logotipo y descriptor en un solo bloque para banners, piezas y presentaciones.</p>
+          </article>
+
+          <article class="rgb-card brand-detail-card">
+            <button
+              type="button"
+              class="brand-zoom-trigger"
+              data-title="Paleta Cromática y Degradados"
+              data-desc="Escala cromática oficial con degradados cian/agua (#00ffff/#e0f7fa), azul/violeta (#3b4add/#b04dcf), magenta/púrpura (#d90368/#3f0071) y base #2c323b."
+            >
+              <img src="images/marca (1).png" alt="Paleta de colores y degradados de Facts On Gamers" />
+            </button>
+            <h3>Paleta Cromática y Degradados</h3>
+            <p>Degradados de alto contraste junto al tono neutro <code>#2c323b</code> para mantener consistencia en todo el sistema visual.</p>
+          </article>
+
+          <article class="rgb-card brand-detail-card typo-feature-card">
+            <div class="typo-box-preview">
+              <span class="typo-chip">Tipografía Oficial</span>
+              <p class="typo-showcase-black">FACTS ON GAMERS</p>
+              <span class="typo-meta">Montserrat Black · Peso 900</span>
             </div>
-            <div class="typo-sample">
-              <span class="typo-label">Tipografía Oficial · Montserrat Black (900)</span>
-              <p class="typo-display">FACTS ON GAMERS</p>
-            </div>
+            <h3>Tipografía Montserrat Black</h3>
+            <p>Tipografía oficial de alto peso visual elegida por su nitidez, presencia geométrica y carácter moderno.</p>
           </article>
         </div>
       </div>
@@ -108,6 +160,19 @@
       <p>Facts On Gamers (F.O.G.) · «Rendimiento real, sin filtros.»</p>
     </div>
   </footer>
+
+  <div class="brand-lightbox" id="brandLightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="brand-lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="brand-lightbox-panel">
+      <button type="button" class="brand-lightbox-close" id="lightboxClose" aria-label="Cerrar vista ampliada">✕</button>
+      <img src="" alt="" id="lightboxImg" />
+      <div class="brand-lightbox-caption">
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxDesc"></p>
+      </div>
+    </div>
+  </div>
+
   <script src="js/main.js"></script>
 </body>
 </html>
