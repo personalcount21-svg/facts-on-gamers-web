@@ -6,11 +6,11 @@
   <title>Cómo Funciona | Facts On Gamers (F.O.G.)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-<header class="navbar">
+  <header class="navbar">
     <div class="container nav-content">
       <a href="index.html" class="brand">
         <img src="images/logo.png" alt="Isotipo F.O.G." class="brand-logo" />
@@ -84,58 +84,120 @@
           </article>
         </div>
       </div>
+    </section>
+
     <section class="page-section">
       <div class="container">
         <div class="section-intro">
           <span class="eyebrow">Estructura Funcional</span>
           <h2>Gerencia y Áreas</h2>
-          <p class="lead">Distribución funcional de puestos clave para la operación y crecimiento de Facts On Gamers (F.O.G.).</p>
+          <p class="lead">Haz clic en cualquier puesto para ver sus funciones dentro de Facts On Gamers (F.O.G.).</p>
         </div>
 
         <article class="rgb-card management-tree-card">
           <div class="org-tier org-tier-top">
-            <div class="org-role-box org-role-lead">
+            <button
+              type="button"
+              class="org-role-box org-role-lead role-card-trigger"
+              data-title="Gerencia General"
+              data-role="Dirección Estratégica"
+              data-desc="Coordina la operación general de Facts On Gamers en Manta, define objetivos comerciales, supervisa presupuestos, alianzas con proveedores y el crecimiento de la tienda física y el canal online."
+            >
               <span class="org-role-tag">Dirección</span>
               <h3>Gerencia General</h3>
-            </div>
+            </button>
           </div>
 
           <div class="org-connector" aria-hidden="true"></div>
 
           <div class="org-tier org-tier-areas">
-            <div class="org-role-box">
+            <button
+              type="button"
+              class="org-role-box role-card-trigger"
+              data-title="Ventas y Atención Comercial"
+              data-role="Área Comercial"
+              data-desc="Gestiona la atención a clientes, cotizaciones, combos de setup, ventas en tienda física y pedidos digitales, asegurando una experiencia consultiva y de cierre ágil."
+            >
               <span class="org-role-tag">Área Comercial</span>
               <h3>Ventas y Atención Comercial</h3>
-            </div>
-            <div class="org-role-box">
+            </button>
+
+            <button
+              type="button"
+              class="org-role-box role-card-trigger"
+              data-title="Marketing y Contenido"
+              data-role="Área de Marca"
+              data-desc="Cuida la identidad visual de F.O.G., produce contenido técnico y de setups para redes sociales, coordina campañas promocionales y dinamiza la comunidad gamer local."
+            >
               <span class="org-role-tag">Área de Marca</span>
               <h3>Marketing y Contenido</h3>
-            </div>
-            <div class="org-role-box">
+            </button>
+
+            <button
+              type="button"
+              class="org-role-box role-card-trigger"
+              data-title="Operaciones y Logística"
+              data-role="Área Logística"
+              data-desc="Controla el abastecimiento, recepción y control de stock de componentes y periféricos, preparación de pedidos y despachos locales o nacionales con puntualidad."
+            >
               <span class="org-role-tag">Área Logística</span>
               <h3>Operaciones y Logística</h3>
-            </div>
-            <div class="org-role-box">
+            </button>
+
+            <button
+              type="button"
+              class="org-role-box role-card-trigger"
+              data-title="Soporte Técnico y Garantía"
+              data-role="Área Técnica"
+              data-desc="Brinda asesoría técnica sobre compatibilidad y configuración de equipos, mantiene operativa la zona de prueba y gestiona revisiones, cambios y garantías locales."
+            >
               <span class="org-role-tag">Área Técnica</span>
               <h3>Soporte Técnico y Garantía</h3>
-            </div>
+            </button>
           </div>
 
           <div class="org-connector" aria-hidden="true"></div>
 
           <div class="org-tier org-tier-roles">
-            <div class="org-role-box org-role-sub">
+            <button
+              type="button"
+              class="org-role-box org-role-sub role-card-trigger"
+              data-title="Asesoría y Ventas"
+              data-role="Puesto Operativo · Comercial"
+              data-desc="Orienta a jugadores y creadores según su presupuesto y tipo de uso, recomienda periféricos o componentes adecuados y atiende consultas por mostrador y chat."
+            >
               <h3>Asesoría y Ventas</h3>
-            </div>
-            <div class="org-role-box org-role-sub">
+            </button>
+
+            <button
+              type="button"
+              class="org-role-box org-role-sub role-card-trigger"
+              data-title="Diseño y Redes Sociales"
+              data-role="Puesto Operativo · Marca"
+              data-desc="Elabora piezas gráficas, fichas de producto, Reels y publicaciones alineadas con la estética de la marca, respondiendo a la comunidad en plataformas digitales."
+            >
               <h3>Diseño y Redes Sociales</h3>
-            </div>
-            <div class="org-role-box org-role-sub">
+            </button>
+
+            <button
+              type="button"
+              class="org-role-box org-role-sub role-card-trigger"
+              data-title="Inventario y Envíos"
+              data-role="Puesto Operativo · Logística"
+              data-desc="Registra entradas y salidas de mercancía, verifica el estado de cada caja o accesorio, arma paquetes y coordina entregas locales y envíos."
+            >
               <h3>Inventario y Envíos</h3>
-            </div>
-            <div class="org-role-box org-role-sub">
+            </button>
+
+            <button
+              type="button"
+              class="org-role-box org-role-sub role-card-trigger"
+              data-title="Pruebas y Postventa"
+              data-role="Puesto Operativo · Soporte"
+              data-desc="Revisa que los equipos y periféricos de exhibición funcionen bien, apoya en pruebas de rendimiento o compatibilidad y da seguimiento a casos de garantía."
+            >
               <h3>Pruebas y Postventa</h3>
-            </div>
+            </button>
           </div>
         </article>
       </div>
@@ -147,6 +209,20 @@
       <p>Facts On Gamers (F.O.G.) · Manta, Manabí, Ecuador</p>
     </div>
   </footer>
+
+  <!-- Ventanita modal para funciones de cada puesto -->
+  <div class="brand-lightbox" id="brandLightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="brand-lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="brand-lightbox-panel">
+      <button type="button" class="brand-lightbox-close" id="lightboxClose" aria-label="Cerrar detalle del puesto">✕</button>
+      <img src="" alt="" id="lightboxImg" />
+      <div class="brand-lightbox-caption">
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxDesc"></p>
+      </div>
+    </div>
+  </div>
+
   <script src="js/main.js"></script>
 </body>
 </html>

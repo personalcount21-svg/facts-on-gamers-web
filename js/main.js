@@ -49,16 +49,42 @@ document.addEventListener("DOMContentLoaded", () => {
   const lightboxDesc = document.getElementById("lightboxDesc");
   const lightboxClose = document.getElementById("lightboxClose");
   const lightboxBackdrop = document.getElementById("lightboxBackdrop");
-  const zoomTriggers = document.querySelectorAll(".brand-zoom-trigger");
+  const zoomTriggers = document.querySelectorAll(".brand-zoom-trigger, .role-card-trigger");
 
-  if (lightbox && lightboxImg && zoomTriggers.length > 0) {
+  if (lightbox && lightboxTitle && lightboxDesc && zoomTriggers.length > 0) {
+    let roleTagEl = lightbox.querySelector(".lightbox-role-badge");
+    if (!roleTagEl) {
+      roleTagEl = document.createElement("span");
+      roleTagEl.className = "lightbox-role-badge";
+      lightboxTitle.parentNode.insertBefore(roleTagEl, lightboxTitle);
+    }
+
     const openLightbox = (trigger) => {
       const img = trigger.querySelector("img");
-      if (!img) return;
-      lightboxImg.src = img.getAttribute("src");
-      lightboxImg.alt = img.getAttribute("alt") || "";
-      if (lightboxTitle) lightboxTitle.textContent = trigger.getAttribute("data-title") || "";
-      if (lightboxDesc) lightboxDesc.textContent = trigger.getAttribute("data-desc") || "";
+      const roleText = trigger.getAttribute("data-role") || "";
+
+      if (lightboxImg) {
+        if (img) {
+          lightboxImg.src = img.getAttribute("src");
+          lightboxImg.alt = img.getAttribute("alt") || "";
+          lightboxImg.style.display = "block";
+        } else {
+          lightboxImg.removeAttribute("src");
+          lightboxImg.alt = "";
+          lightboxImg.style.display = "none";
+        }
+      }
+
+      if (roleText) {
+        roleTagEl.textContent = roleText;
+        roleTagEl.style.display = "inline-block";
+      } else {
+        roleTagEl.textContent = "";
+        roleTagEl.style.display = "none";
+      }
+
+      lightboxTitle.textContent = trigger.getAttribute("data-title") || "";
+      lightboxDesc.textContent = trigger.getAttribute("data-desc") || "";
       lightbox.classList.add("is-open");
       lightbox.setAttribute("aria-hidden", "false");
     };
@@ -66,7 +92,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const closeLightbox = () => {
       lightbox.classList.remove("is-open");
       lightbox.setAttribute("aria-hidden", "true");
-      lightboxImg.src = "";
+      if (lightboxImg) {
+        lightboxImg.removeAttribute("src");
+      }
     };
 
     zoomTriggers.forEach((btn) => {

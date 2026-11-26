@@ -666,29 +666,7 @@ h1 {
   line-height: 1.55 !important;
 }
 
-@media (max-width: 820px) {
-  .hero-grid,
-  .header-split,
-  .split-row,
-  .split-row-reverse {
-    grid-template-columns: 1fr;
-  }
-
-  .split-row-reverse .split-media {
-    order: 2;
-  }
-}
-
-@media (max-width: 540px) {
-  .brand-lockup-pair,
-  .brand-palette-pair {
-    grid-template-columns: 1fr;
-  }
-
-  .brand-asset-box img {
-    max-width: 100%;
-  }
-}/* Tarjetas individuales de Identidad Corporativa + Lightbox */
+/* Tarjetas individuales de Identidad Corporativa + Lightbox */
 .brand-cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -854,7 +832,9 @@ h1 {
   color: var(--text-muted);
   font-size: 0.95rem;
   line-height: 1.6;
-}/* Sección Gerencia y Áreas */
+}
+
+/* Sección Gerencia y Áreas */
 .management-tree-card {
   display: flex;
   flex-direction: column;
@@ -929,7 +909,9 @@ h1 {
   margin-bottom: 0 !important;
   font-size: 0.98rem !important;
   color: var(--text-dark) !important;
-}/* Análisis FODA */
+}
+
+/* Análisis FODA */
 .foda-tag {
   display: inline-block;
   font-size: 0.72rem;
@@ -954,4 +936,49 @@ h1 {
 
 .foda-amenazas {
   border-top: 4px solid #8a3ffc;
+}
+
+button.org-role-box {
+  font-family: inherit;
+  width: 100%;
+  cursor: pointer;
+}
+
+.role-card-trigger:focus-visible {
+  outline: 2px solid #4c58ff;
+  outline-offset: 2px;
+}
+
+.lightbox-role-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #4c58ff;
+  margin-bottom: 0.35rem;
+}
+
+@media (max-width: 820px) {
+  .hero-grid,
+  .header-split,
+  .split-row,
+  .split-row-reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .split-row-reverse .split-media {
+    order: 2;
+  }
+}
+
+@media (max-width: 540px) {
+  .brand-lockup-pair,
+  .brand-palette-pair {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-asset-box img {
+    max-width: 100%;
+  }
 }
